@@ -14,3 +14,7 @@ web/.next/
 web/out/
 web/node_modules/
 *.tsbuildinfo
+
+# Netlify
+.netlify/
+web/.netlify/
