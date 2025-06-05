@@ -4,7 +4,7 @@ A collection of my personal brag documents, tracking my accomplishments, project
 
 ## 🌐 Live Site
 
-The site is deployed on Netlify: [View Brag Documents](https://your-site-name.netlify.app)
+The site is deployed on Netlify: [View Brag Documents](https://bragdocs.netlify.app)
 
 ## 📊 Yearly Brag Docs
 
