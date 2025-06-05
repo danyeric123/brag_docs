@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { getSortedPostsData } from '../lib/docs';
+import { getSortedPostsData } from '@/lib/docs';
 import { GetStaticProps } from 'next';
 
 export default function Home({

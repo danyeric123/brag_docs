@@ -1,4 +1,4 @@
-import { getPostData, getAllPostIds } from '../../lib/docs';
+import { getPostData, getAllPostIds } from '@/lib/docs';
 import { GetStaticProps, GetStaticPaths } from 'next';
 import Link from 'next/link';
 
