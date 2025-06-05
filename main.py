@@ -19,7 +19,7 @@ def new(year):
     if year is None:
         year = datetime.now().year
 
-    docs_path = Path("docs")
+    docs_path = Path("_brag_docs/docs")
     template_path = docs_path / "brag_doc_template.md"
     new_doc_path = docs_path / f"brag_doc_{year}.md"
 
@@ -45,7 +45,7 @@ def new(year):
 @cli.command()
 def summary():
     """Generates a summary of all projects from the brag docs."""
-    docs_path = Path("docs")
+    docs_path = Path("_brag_docs/docs")
     project_pattern = re.compile(r"^(##|###) (.*)")
 
     brag_docs = sorted(docs_path.glob("brag_doc_20*.md"))
@@ -91,7 +91,7 @@ def summary():
 @click.argument("files", nargs=-1, type=click.Path(exists=True))
 def validate(files):
     """Validates that the brag docs contain all sections from the template."""
-    docs_path = Path("docs")
+    docs_path = Path("_brag_docs/docs")
     template_path = docs_path / "brag_doc_template.md"
 
     if not template_path.is_file():
