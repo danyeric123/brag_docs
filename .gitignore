@@ -8,3 +8,9 @@ wheels/
 
 # Virtual environments
 .venv
+
+# Next.js build artifacts
+web/.next/
+web/out/
+web/node_modules/
+*.tsbuildinfo
