@@ -1,51 +1,59 @@
----
-# yaml-language-server: $schema=https://json.schemastore.org/github-workflow.json
-name: Deploy to GitHub Pages
+# This GitHub Actions workflow is disabled in favor of Netlify deployment
+# Netlify provides better support for Next.js static sites with client-side features
+# 
+# To re-enable GitHub Pages deployment, uncomment the configuration below
+# and remove this comment block
 
-on:
-  push:
-    branches:
-      - main
-  workflow_dispatch:
+name: "Disabled - GitHub Pages Deployment"
 
-permissions:
-  contents: read
-  pages: write
-  id-token: write
+# Workflow is disabled - no triggers defined
 
-concurrency:
-  group: 'pages'
-  cancel-in-progress: false
-
-jobs:
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-      - name: Set up Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-      - name: Install pnpm
-        uses: pnpm/action-setup@v4
-        with:
-          version: 9
-      - name: Install dependencies
-        working-directory: ./web
-        run: pnpm install
-      - name: Build
-        working-directory: ./web
-        run: pnpm build
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: web/out
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+# Uncomment below to re-enable GitHub Pages deployment:
+#
+# on:
+#   push:
+#     branches:
+#       - main
+#   workflow_dispatch:
+#
+# permissions:
+#   contents: read
+#   pages: write
+#   id-token: write
+#
+# concurrency:
+#   group: 'pages'
+#   cancel-in-progress: false
+#
+# jobs:
+#   deploy:
+#     environment:
+#       name: github-pages
+#       url: ${{ steps.deployment.outputs.page_url }}
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: Checkout
+#         uses: actions/checkout@v4
+#       - name: Set up Node.js
+#         uses: actions/setup-node@v4
+#         with:
+#           node-version: '20'
+#       - name: Install pnpm
+#         uses: pnpm/action-setup@v4
+#         with:
+#           version: 9
+#       - name: Install dependencies
+#         working-directory: ./web
+#         run: pnpm install
+#       - name: Build
+#         working-directory: ./web
+#         run: pnpm build
+#       - name: Setup Pages
+#         uses: actions/configure-pages@v5
+#       - name: Upload artifact
+#         uses: actions/upload-pages-artifact@v3
+#         with:
+#           path: web/out
+#       - name: Deploy to GitHub Pages
+#         id: deployment
+#         uses: actions/deploy-pages@v4
