@@ -1,0 +1,34 @@
+[project]
+name = "brag-docs"
+version = "0.1.0"
+description = "A collection of personal brag docs and tooling to maintain them."
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "click"
+]
+
+[project.scripts]
+brag-docs = "main:cli"
+
+[project.optional-dependencies]
+dev = [
+    "ruff",
+    "yamllint"
+]
+
+[tool.uv]
+package = true
+
+[tool.ruff]
+line-length = 88
+
+[tool.ruff.lint]
+# Enable pycodestyle, Pyflakes, isort, and flake8-bugbear rules.
+select = ["E", "W", "F", "I", "B"]
+
+[dependency-groups]
+dev = [
+    "ruff>=0.11.13",
+    "yamllint>=1.37.1",
+]
