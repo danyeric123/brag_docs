@@ -22,7 +22,7 @@ build:
 	@echo "Building web application..."
 	@cd web && pnpm build
 
-deploy: build
+deploy:
 	@echo "Deploying to Netlify..."
 	@cd web && netlify deploy --prod --dir=out
 	@echo "Deployment complete!"
