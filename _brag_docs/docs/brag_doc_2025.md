@@ -41,34 +41,35 @@
   - Became a core engineer advocating for proto file centralization best
     practices
 
-## Document Templating and Management Portal Revamp
+## Document Templating and Management Portal Revamp (Doc-Hub)
 
-- **Context & Problem:** The company's core revenue stream from insurance
-  products is directly tied to the variety and extensibility of documents we can
-  generate. The document support team, responsible for creating and maintaining
-  these templates, was hampered by a slow, unintuitive internal UI with a
-  limited feature set. Critical processes, like creating test quotes for
-  document validation, were manual and took over 10 minutes per document,
-  creating a significant bottleneck.
+- **Context & Problem:**  
+  - The company's core revenue stream from insurance products is directly tied to the variety and extensibility of documents we can generate. The document support team, responsible for creating and maintaining these templates, was hampered by a slow, unintuitive internal UI with a limited feature set. Critical processes, like creating test quotes for document validation, were manual and took over 10 minutes per document, creating a significant bottleneck.
 - **Leadership & Initiative:**
-  - I spearheaded an initiative to completely revamp this internal management
-    portal, with the primary goal of boosting the doc support team's
-    productivity.
-  - I drove the project from conception to delivery, coordinating with product,
-    business, and cross-functional engineering teams to define clear
-    requirements and align on project goals.
-  - I established key performance indicators (KPIs) and a process for gathering
-    continuous user feedback to ensure the new tool met user needs and delivered
-    measurable improvements.
+  - I spearheaded an initiative to completely revamp this internal management portal, with the primary goal of boosting the doc support team's productivity.
+  - I drove the project from conception to delivery, coordinating with product, business, and cross-functional engineering teams to define clear requirements and align on project goals.
+  - I established key performance indicators (KPIs) and a process for gathering continuous user feedback to ensure the new tool met user needs and delivered measurable improvements.
+  - Conducted stakeholder surveys to select the name "Doc-Hub," boosting adoption and brand recognition among internal users.
+  - Partnered closely with Product Managers and Engineering Managers to develop clear requirements, articulate product vision, and map user flows and design prototypes.
 - **Execution & Impact:**
-  - I led the design and implementation of a new, modern frontend that automated
-    previously manual workflows and introduced a much wider feature set.
-  - By applying best practices in UX/UI and running experiments on different
-    user flows, the new tool provides a more intuitive and efficient experience.
-  - This initiative directly addressed a major operational bottleneck,
-    empowering the document support team to work more effectively. This, in
-    turn, allows Coalition to increase the variety and volume of insurance
-    products we can offer, directly supporting a key company growth objective.
+  - I led the design and implementation of a new, modern frontend that automated previously manual workflows and introduced a much wider feature set.
+  - Spun up a new frontend repository from scratch using pnpm, React Context API, and custom hooks; implemented best practice patterns for toasts and user flows, and organized code in a modular, scalable structure.
+  - Trained and mentored the primarily backend-focused team on modern frontend paradigms and UX/UI best practices, elevating the team's full-stack capabilities.
+  - By applying best practices in UX/UI and running experiments on different user flows, the new tool provides a more intuitive and efficient experience.
+  - This initiative directly addressed a major operational bottleneck, empowering the document support team to work more effectively. This, in turn, allows Coalition to increase the variety and volume of insurance products we can offer, directly supporting a key company growth objective.
+
+## Next-Gen Document Generation & Management System
+
+- **Context & Problem:**  
+  - The legacy document platform struggled with high-impact incidents, slow generation latency, and limited scalability for new markets, creating operational risk and hindering growth.
+- **Leadership & Initiative:**  
+  - Collaborated with Principal Engineers and senior leadership to define the architecture for a next-gen document system covering generation, storage, fetching, and management.
+  - Secured buy-in by presenting KPIs targeting near-zero high-impact incidents, reduced generation times, and global scalability.
+  - Led cross-functional design workshops from end of Q1 through Q2 to refine requirements and align stakeholders.
+- **Execution & Impact:**  
+  - Authored the comprehensive design doc and multiple ADRs outlining service boundaries, data flows, and operational controls.
+  - Advised on new service implementations, monitored performance metrics, and iteratively refined the design, resolving bottlenecks like cross environment deployments.
+  - Implemented dashboards to track incident rates and generation throughput as we expanded into additional markets.
 
 # **Collaboration & Mentorship**
 
@@ -82,16 +83,16 @@
 
 ### Cross-Team Technical Leadership
 
+- Partnered with Product Managers and Engineering Managers to define requirements, articulate vision, and design user flows for the Doc-Hub portal revamp.
 - Tech E&O Project Leadership:
   - Created a comprehensive initial design document
-  - Demonstrated adaptability by pivoting based on senior principal engineer
-    feedback
+  - Demonstrated adaptability by pivoting based on senior principal engineer feedback
   - Developed and presented multiple architectural options with clear trade-offs
-  - Successfully integrated with exec-risks-backend despite architectural
-    differences
+  - Successfully integrated with exec-risks-backend despite architectural differences
   - Led proto file centralization initiative across multiple services
   - Completed complex refactoring work in external team repositories
   - Facilitated smooth handoff to exec-risks team under tight deadlines
+- Collaborated with Principal Engineers and senior leadership on the next-gen document system architecture, defining KPIs for incident reduction, performance, and global scalability.
 
 ###
 
@@ -112,17 +113,19 @@
 - Improved repository documentation and developer onboarding:
   - Enhanced READMEs with comprehensive documentation
   - Optimized makefile commands for better workflow efficiency
-  -
+- Bootstrapped a new frontend repository for the Doc-Hub portal using pnpm, React Context API, custom hooks, and modular code organization; introduced UI patterns and best practices for toasts and user flows to enhance developer experience.
 
 # **Design & Documentation**
 
 ## Design Docs
 
-1.
+1. Authored a comprehensive design document for the Doc-Hub portal revamp, incorporating stakeholder naming survey results, user flow diagrams, and interactive prototypes.
+2. Authored the architecture design document and ADRs for the next-gen document generation & management system, focusing on incident reduction, performance optimization, and global scalability.
 
 ## Documentation
 
 1. Heavily improved READMEs in all repos owned
+2. Authored a frontend style guide for the Doc-Hub portal, detailing code organization, Context API usage, hook patterns, and toast/user flow best practices.
 
 # **What you learned**
 
