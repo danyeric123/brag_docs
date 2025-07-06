@@ -47,12 +47,13 @@
   - The company's core revenue stream from insurance products is directly tied to the variety and extensibility of documents we can generate. The document support team, responsible for creating and maintaining these templates, was hampered by a slow, unintuitive internal UI with a limited feature set. Critical processes, like creating test quotes for document validation, were manual and took over 10 minutes per document, creating a significant bottleneck.
 - **Leadership & Initiative:**
   - I spearheaded an initiative to completely revamp this internal management portal, with the primary goal of boosting the doc support team's productivity.
+  - Challenged an initial proposal from product leadership for a costly ($84,000/month) AI-powered automation. I demonstrated that we could achieve over 60% of the goals by revamping the frontend and automating testing through API calls. This pragmatic approach won over the director, who became a strong supporter after seeing the results.
   - I drove the project from conception to delivery, coordinating with product, business, and cross-functional engineering teams to define clear requirements and align on project goals.
   - I established key performance indicators (KPIs) and a process for gathering continuous user feedback to ensure the new tool met user needs and delivered measurable improvements.
   - Conducted stakeholder surveys to select the name "Doc-Hub," boosting adoption and brand recognition among internal users.
   - Partnered closely with Product Managers and Engineering Managers to develop clear requirements, articulate product vision, and map user flows and design prototypes.
 - **Execution & Impact:**
-  - I led the design and implementation of a new, modern frontend that automated previously manual workflows and introduced a much wider feature set.
+  - I led the design and implementation of a new, modern frontend that automated previously manual workflows and introduced a much wider feature set, reducing document validation time from 10 minutes to under 1 minute.
   - Spun up a new frontend repository from scratch using pnpm, React Context API, and custom hooks; implemented best practice patterns for toasts and user flows, and organized code in a modular, scalable structure.
   - Trained and mentored the primarily backend-focused team on modern frontend paradigms and UX/UI best practices, elevating the team's full-stack capabilities.
   - By applying best practices in UX/UI and running experiments on different user flows, the new tool provides a more intuitive and efficient experience.
