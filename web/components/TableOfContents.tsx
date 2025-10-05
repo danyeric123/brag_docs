@@ -1,17 +1,17 @@
-'use client';
+"use client";
 
-import { useState, useEffect, useRef } from 'react';
-import { Heading } from '@/lib/docs';
+import { useState, useEffect, useRef } from "react";
+import { Heading } from "@/lib/docs";
 
 interface TableOfContentsProps {
   headings: Heading[];
 }
 
 export default function TableOfContents({ headings }: TableOfContentsProps) {
-  const [activeId, setActiveId] = useState<string>('');
+  const [activeId, setActiveId] = useState<string>("");
   const [isExpanded, setIsExpanded] = useState(false);
   const observerRef = useRef<IntersectionObserver | null>(null);
-  const clickedRef = useRef<string>('');
+  const clickedRef = useRef<string>("");
   const timeoutRef = useRef<NodeJS.Timeout | null>(null);
 
   useEffect(() => {
@@ -23,7 +23,7 @@ export default function TableOfContents({ headings }: TableOfContentsProps) {
     }
 
     const observerOptions = {
-      rootMargin: '-10% 0px -80% 0px', // More precise detection
+      rootMargin: "-10% 0px -80% 0px", // More precise detection
       threshold: [0, 0.25, 0.5, 0.75, 1.0], // Multiple thresholds for better detection
     };
 
@@ -32,7 +32,7 @@ export default function TableOfContents({ headings }: TableOfContentsProps) {
       if (clickedRef.current) return;
 
       const visibleSections = entries
-        .filter(entry => entry.isIntersecting)
+        .filter((entry) => entry.isIntersecting)
         .sort((a, b) => {
           // Sort by intersection ratio (more visible = higher priority)
           if (b.intersectionRatio !== a.intersectionRatio) {
@@ -73,21 +73,21 @@ export default function TableOfContents({ headings }: TableOfContentsProps) {
 
     const element = document.getElementById(id);
     if (element) {
-      element.scrollIntoView({ 
-        behavior: 'smooth', 
-        block: 'start',
-        inline: 'nearest'
+      element.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+        inline: "nearest",
       });
-      
+
       // Update the URL hash for better user experience
-      window.history.pushState(null, '', `#${id}`);
+      window.history.pushState(null, "", `#${id}`);
 
       // Clear the click override after scroll completes
       if (timeoutRef.current) {
         clearTimeout(timeoutRef.current);
       }
       timeoutRef.current = setTimeout(() => {
-        clickedRef.current = '';
+        clickedRef.current = "";
       }, 1000); // Give smooth scroll time to complete
     }
   };
@@ -108,7 +108,7 @@ export default function TableOfContents({ headings }: TableOfContentsProps) {
           </h3>
           <svg
             className={`w-5 h-5 text-gray-500 dark:text-gray-400 transition-transform lg:hidden ${
-              isExpanded ? 'rotate-180' : ''
+              isExpanded ? "rotate-180" : ""
             }`}
             fill="none"
             stroke="currentColor"
@@ -122,8 +122,8 @@ export default function TableOfContents({ headings }: TableOfContentsProps) {
             />
           </svg>
         </button>
-        
-        <div className={`${isExpanded ? 'block' : 'hidden lg:block'}`}>
+
+        <div className={`${isExpanded ? "block" : "hidden lg:block"}`}>
           <nav className="px-4 pb-4">
             <ul className="space-y-1">
               {headings.map(({ id, title, level }) => (
@@ -132,8 +132,8 @@ export default function TableOfContents({ headings }: TableOfContentsProps) {
                     onClick={() => handleClick(id)}
                     className={`block w-full text-left py-1 px-2 rounded text-sm transition-colors hover:bg-gray-100 dark:hover:bg-gray-600 ${
                       activeId === id
-                        ? 'text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-900/20 font-medium'
-                        : 'text-gray-600 dark:text-gray-300'
+                        ? "text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-900/20 font-medium"
+                        : "text-gray-600 dark:text-gray-300"
                     }`}
                     style={{
                       paddingLeft: `${(level - 1) * 12 + 8}px`,
@@ -149,4 +149,4 @@ export default function TableOfContents({ headings }: TableOfContentsProps) {
       </div>
     </div>
   );
-} 
+}

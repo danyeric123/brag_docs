@@ -1,9 +1,9 @@
-import { useTheme } from './ThemeProvider';
-import { useEffect, useState } from 'react';
+import { useTheme } from "./ThemeProvider";
+import { useEffect, useState } from "react";
 
 export function ThemeToggle() {
   const [mounted, setMounted] = useState(false);
-  
+
   // Prevent hydration mismatch by not rendering until mounted
   useEffect(() => {
     setMounted(true);
@@ -38,9 +38,9 @@ function ThemeToggleClient() {
     <button
       onClick={toggleTheme}
       className="fixed top-4 right-4 z-50 p-3 rounded-full bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 dark:focus:ring-offset-gray-900"
-      aria-label={`Switch to ${theme === 'dark' ? 'light' : 'dark'} mode`}
+      aria-label={`Switch to ${theme === "dark" ? "light" : "dark"} mode`}
     >
-      {theme === 'dark' ? (
+      {theme === "dark" ? (
         // Sun icon for light mode
         <svg
           className="w-5 h-5 text-yellow-500 hover:text-yellow-600 transition-colors"
@@ -65,4 +65,4 @@ function ThemeToggleClient() {
       )}
     </button>
   );
-} 
+}
