@@ -40,16 +40,19 @@ I use a template to structure my brag documents:
 ### Installation
 
 1. **Install Node.js dependencies globally**:
+
    ```bash
    npm install -g prettier markdownlint-cli2 netlify-cli
    ```
 
 2. **Install Python dependencies**:
+
    ```bash
    make install-dev
    ```
 
 3. **Install web app dependencies**:
+
    ```bash
    cd web && pnpm install
    ```
@@ -57,6 +60,7 @@ I use a template to structure my brag documents:
 ### Usage
 
 **Python CLI tool**:
+
 ```bash
 brag-docs --help
 brag-docs new --year 2025
@@ -65,17 +69,20 @@ brag-docs validate
 ```
 
 **Development server**:
+
 ```bash
 cd web && pnpm dev
 ```
 
 **Build and deploy**:
+
 ```bash
 make build
 make deploy
 ```
 
 **Linting and formatting**:
+
 ```bash
 make lint
 make format
@@ -83,7 +90,7 @@ make format
 
 ## 📁 Project Structure
 
-```
+```text
 brag_docs/
 ├── _brag_docs/docs/          # Markdown brag documents
 ├── web/                      # Next.js web application
@@ -98,12 +105,52 @@ brag_docs/
 
 ## 🎨 Features
 
+- ✅ **Company Filtering**: Filter brag documents by employer with clean URLs
 - ✅ **Dark/Light Mode**: Toggle with sun/moon icon (defaults to dark)
 - ✅ **Interactive Checkboxes**: GitHub-flavored markdown task lists
 - ✅ **Responsive Design**: Works on all device sizes
 - ✅ **Fast Loading**: Static site generation with Next.js
 - ✅ **SEO Friendly**: Proper meta tags and structure
 - ✅ **CLI Management**: Create, validate, and summarize documents
+
+### Company Filtering
+
+The site supports filtering content by company using HTML comment tags in the markdown files. This is especially useful when transitioning between jobs while maintaining a single document per year.
+
+**How it works:**
+
+1. Add company tags in your markdown using HTML comments:
+
+   ```markdown
+   <!-- company: CoalitionInc -->
+   ## Projects at Coalition
+   - Project 1
+   - Project 2
+
+   <!-- company: CapitalOne -->
+   ## Projects at Capital One
+   - Project 3
+   - Project 4
+   ```
+
+2. Filter by company in the URL:
+
+   - `/2025` - Shows all content
+   - `/2025?company=coalitioninc` - Shows only Coalition Inc content
+   - `/2025?company=capitalone` - Shows only Capital One content
+
+3. The UI provides interactive filter pills for easy switching between views
+
+**URL Variations:**
+
+All of these work identically:
+
+- `?company=capitalone`
+- `?company=CapitalOne`
+- `?company=capital_one`
+- `?company=capital-one`
+
+**Content without tags** (like yearly goals) is displayed regardless of the filter, making it perfect for shared information.
 
 ## 🚀 Deployment
 
@@ -115,4 +162,4 @@ make deploy
 
 ## 📄 License
 
-This project is for personal use. Feel free to use the structure and tooling as inspiration for your own brag documents! 
+This project is for personal use. Feel free to use the structure and tooling as inspiration for your own brag documents!

@@ -8,6 +8,8 @@
 - [x] Maintain (and possibly deepen) my lesser-used skills in the JS/TS
       ecosystem
 
+<!-- company: CoalitionInc -->
+
 # **Projects**
 
 ## Tech E&O Dynamic Applications Project

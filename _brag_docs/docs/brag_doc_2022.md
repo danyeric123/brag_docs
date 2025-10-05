@@ -10,6 +10,8 @@
 - [ ] Gain Software/System Design skills through either real-life experience or
       much study
 
+<!-- company: CoalitionInc -->
+
 # **Projects**
 
 ### PDFGen

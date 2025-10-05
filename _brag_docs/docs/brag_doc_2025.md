@@ -10,6 +10,8 @@
 
 # **Projects**
 
+<!-- company: CoalitionInc -->
+
 ## Tech E&O Dynamic Applications Project
 
 - **Leadership and Initiative:**
@@ -72,11 +74,83 @@
   - Advised on new service implementations, monitored performance metrics, and iteratively refined the design, resolving bottlenecks like cross environment deployments.
   - Implemented dashboards to track incident rates and generation throughput as we expanded into additional markets.
 
+<!-- company: CapitalOne -->
+
+## LLDS Customer Onboarding & Parity Checker System
+
+- **Context & Problem:**
+  - First-time onboarding of a new customer to Capital One's Low Latency Data Store (LLDS) required a scalable, reusable parity checking system to validate that latency would be equivalent or better and data integrity would be maintained during migration
+  - System needed to handle 2,000 requests per second (~172.8 million requests per day) while maintaining low latency
+  - System needed to handle request/response structure translation between customer format and internal system expectations
+  - Solution needed to be cost-efficient, maintainable, and minimize customer implementation burden
+- **Leadership & Initiative:**
+  - Within weeks of joining Capital One, proactively jumped into the project without being asked and made significant design contributions
+  - Quickly learned Capital One's event streaming system and leveraged it to create an elegant solution
+  - Collaborated with team lead, Distinguished Engineer, and customers to refine design approach
+  - Proposed a lambda-based event-driven architecture that eliminated the need for customers to mirror traffic—they only needed to register, and the system handled the rest
+  - Design was praised by both team lead and Distinguished Engineer for being cost-effective and well-architected
+- **Execution & Impact:**
+  - Delivered the first scalable, reusable parity checking system for LLDS customer onboarding
+  - Achieved significant cost savings through efficient architecture design
+  - Reduced customer onboarding friction by minimizing their implementation requirements
+  - Mentored a junior developer on Python best practices during project execution
+  - Recognized by team lead for Python expertise—team lead explicitly stated I had taught them new Python concepts
+
+## Enterprise Security Groups Migration
+
+- **Context & Problem:**
+  - Enterprise initiative to transition from legacy security groups to more granular, application-specific security groups for improved security posture
+  - Required coordination across multiple teams to identify common ingress/egress rules
+  - Needed to understand service-specific security requirements for each team service
+- **Leadership & Initiative:**
+  - Within one month of starting, led this enterprise initiative for my team
+  - Created and coordinated a dedicated Slack channel for cross-team knowledge sharing and collaboration
+  - Researched and documented security requirements for each service within my team
+  - Identified opportunities to share common security group rules across teams to reduce duplication and save time
+- **Execution & Impact:**
+  - Delivered project within two weeks of assignment, ahead of schedule
+  - Mentored junior developer on AWS security concepts including Security Groups and Prefix Lists
+  - Contributed to enterprise-wide security improvement initiative
+  - Established reusable patterns that other teams could leverage
+
+## GitHub Enterprise Migration
+
+- **Context & Problem:**
+  - Company initiative to migrate from legacy internal GitHub system to GitHub Enterprise (github.com)
+  - Director prioritized early migration to get ahead of enterprise timeline
+- **Leadership & Initiative:**
+  - Volunteered to lead the migration effort for my team
+  - Proactively engaged with other teams to understand potential pitfalls and manual work requirements
+  - Migrated multiple repositories to new GitHub Enterprise system
+  - Monitored for issues post-migration and coordinated with stakeholders
+- **Execution & Impact:**
+  - Successfully completed early migration ahead of planned timeline
+  - Positioned team to lead by example for other teams in the organization
+  - Identified and documented migration patterns to help future migrations
+
+## AI Support Agent Platform
+
+- **Context & Problem:**
+  - Project started by previous engineers to create an AI-powered support agent for internal tooling
+  - Needed senior engineering ownership to clean up codebase, establish best practices, and expand vision
+  - High visibility project with Senior Vice President interest
+- **Leadership & Initiative:**
+  - Within weeks of starting, onboarded to project (outside assigned work) and quickly took senior engineering ownership
+  - Learned Capital One's AI/ML system, tooling ecosystem, and available platform capabilities
+  - Elevated project vision from single-team tool to company-wide platform that any team could adopt by providing their documentation
+  - Guided team on Python best practices and code quality improvements
+  - Project was demoed during organizational all-hands, showcasing its potential impact
+- **Execution & Impact:**
+  - Transformed project into a scalable platform approach rather than single-use tool
+  - Positioned solution as reusable asset for the entire company
+  - Gained Senior Vice President sponsorship and visibility
+  - Enabled other teams to create their own support agents for internal products
+
 # **Collaboration & Mentorship**
 
 ## **Collaboration**
 
-###
+<!-- company: CoalitionInc -->
 
 ### **Mentorship and Co-Contributor Role in Design Docs**
 
@@ -95,7 +169,34 @@
   - Facilitated smooth handoff to exec-risks team under tight deadlines
 - Collaborated with Principal Engineers and senior leadership on the next-gen document system architecture, defining KPIs for incident reduction, performance, and global scalability.
 
-###
+<!-- company: CapitalOne -->
+
+### Cross-Team Coordination and Knowledge Sharing
+
+- Created and facilitated dedicated Slack channel for cross-team collaboration on security groups migration, enabling teams to share learnings and identify common patterns
+- Collaborated with team lead (Distinguished Engineer level) and external customers on LLDS parity checker design, incorporating feedback from multiple stakeholders
+- Proactively engaged with other teams during GitHub migration to understand challenges and document best practices for future migrations
+
+### Python Expertise and Technical Leadership
+
+- Recognized by team lead for Python expertise—explicitly told that I had taught them new Python concepts
+- Praised by both manager and team lead for quick onboarding and early contributions
+- Guided team on Python best practices and code quality improvements for AI Support Agent platform
+- Demonstrated technical depth in lambda-based event-driven architectures and AWS security concepts
+
+## **Mentorship**
+
+### Direct Mentorship of Junior Developers
+
+- Mentored junior developer on Python best practices during LLDS parity checker project execution
+- Mentored junior developer on AWS security concepts including Security Groups and Prefix Lists during enterprise security migration
+- Guided team members on code quality and Python best practices for AI Support Agent platform
+
+### Knowledge Transfer and Teaching
+
+- Working towards becoming an instructor in internal "Tech College" to teach new hires and new graduates about AWS and Lambda
+- Would cover both general AWS/Lambda concepts and Capital One-specific implementations
+- Initiative taken outside of assigned work to give back and share knowledge company-wide
 
 ### **General Recognition**
 
@@ -105,18 +206,32 @@
 
 ## Foundational Code
 
+<!-- company: CoalitionInc -->
+
 ### **Refactoring and Documentation**
 
 -
 
 ### Infrastructure and Developer Experience
 
+<!-- company: CoalitionInc -->
+
 - Improved repository documentation and developer onboarding:
   - Enhanced READMEs with comprehensive documentation
   - Optimized makefile commands for better workflow efficiency
 - Bootstrapped a new frontend repository for the Doc-Hub portal using pnpm, React Context API, custom hooks, and modular code organization; introduced UI patterns and best practices for toasts and user flows to enhance developer experience.
 
+<!-- company: CapitalOne -->
+
+- Enhanced documentation for two key team repositories:
+  - Integrated knowledge transfer session notes directly into READMEs for better accessibility
+  - Improved onboarding experience for new team members by consolidating tribal knowledge
+  - Made critical information discoverable and maintainable for long-term team success
+- Made multiple code quality improvements through smaller PRs, incrementally improving codebase health
+
 # **Design & Documentation**
+
+<!-- company: CoalitionInc -->
 
 ## Design Docs
 
@@ -127,6 +242,23 @@
 
 1. Heavily improved READMEs in all repos owned
 2. Authored a frontend style guide for the Doc-Hub portal, detailing code organization, Context API usage, hook patterns, and toast/user flow best practices.
+
+<!-- company: CapitalOne -->
+
+## Design Docs
+
+1. Co-authored design for LLDS customer onboarding parity checker system, including:
+   - Lambda-based event-driven architecture leveraging Capital One's event streaming system
+   - Cost analysis and efficiency recommendations
+   - Request/response translation approach
+   - Scalable, reusable patterns for future customer onboarding
+   - Design was praised by Distinguished Engineer and team lead for cost-effectiveness and architectural quality
+
+## Documentation
+
+1. Enhanced READMEs for two critical team repositories by integrating knowledge transfer session notes
+2. Documented security groups migration patterns and cross-team learnings
+3. Created migration guides and best practices documentation for GitHub Enterprise transition
 
 # **What you learned**
 
@@ -142,7 +274,26 @@ Concepts:
 
 ## Libraries and Tools
 
+<!-- company: CoalitionInc -->
+
 -
+
+<!-- company: CapitalOne -->
+
+### Concepts and Systems
+
+- **Event-Driven Architecture at Scale:** Learned Capital One's enterprise event streaming system and how to leverage it for building scalable, loosely-coupled services. Applied this knowledge to design lambda-based event consumers for the LLDS parity checker.
+- **AI/ML Platform and Tooling:** Gained deep understanding of Capital One's AI/ML system, including available tools, platform capabilities, and integration patterns for building AI-powered applications.
+- **Enterprise Security Patterns:** Developed expertise in AWS Security Groups, Prefix Lists, and enterprise-scale security posture management. Learned how to balance security requirements with team autonomy.
+- **Large-Scale GitHub Enterprise Migration:** Understood the challenges and best practices for migrating enterprise codebases from legacy systems to modern platforms.
+
+### Libraries and Tools
+
+- Capital One's internal event streaming platform and its integration patterns
+- AWS Lambda best practices and Capital One-specific implementation patterns
+- Capital One's AI/ML tooling ecosystem and platform services
+- GitHub Enterprise (github.com) migration tools and workflows
+- AWS security constructs (Security Groups, Prefix Lists) at enterprise scale
 
 # **Outside of work**
 
