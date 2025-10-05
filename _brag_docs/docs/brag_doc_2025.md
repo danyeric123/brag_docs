@@ -78,73 +78,27 @@
 
 ## LLDS Customer Onboarding & Parity Checker System
 
-- **Context & Problem:**
-  - First-time onboarding of a new customer to Capital One's Low Latency Data Store (LLDS) required a scalable, reusable parity checking system to validate that latency would be equivalent or better and data integrity would be maintained during migration
-  - System needed to handle 2,000 requests per second (~172.8 million requests per day) while maintaining low latency
-  - System needed to handle request/response structure translation between customer format and internal system expectations
-  - Solution needed to be cost-efficient, maintainable, and minimize customer implementation burden
-- **Leadership & Initiative:**
-  - Within weeks of joining Capital One, proactively jumped into the project without being asked and made significant design contributions
-  - Quickly learned Capital One's event streaming system and leveraged it to create an elegant solution
-  - Collaborated with team lead, Distinguished Engineer, and customers to refine design approach
-  - Proposed a lambda-based event-driven architecture that eliminated the need for customers to mirror traffic—they only needed to register, and the system handled the rest
-  - Design was praised by both team lead and Distinguished Engineer for being cost-effective and well-architected
-- **Execution & Impact:**
-  - Delivered the first scalable, reusable parity checking system for LLDS customer onboarding
-  - Achieved significant cost savings through efficient architecture design
-  - Reduced customer onboarding friction by minimizing their implementation requirements
-  - Mentored a junior developer on Python best practices during project execution
-  - Recognized by team lead for Python expertise—team lead explicitly stated I had taught them new Python concepts
+- **Spearheaded the design of a mission-critical parity checker** for Capital One's Low Latency Data Store (LLDS), a system required to handle **2,000 requests per second**. This was the first of its kind and essential for onboarding a new, major customer.
+- **Took immediate ownership within weeks of joining**, rapidly learning the internal event streaming platform to architect a novel, cost-effective, and scalable solution.
+- **My proposed lambda-based, event-driven design was praised by a Distinguished Engineer and the team lead** because it significantly reduced customer implementation effort by eliminating the need for traffic mirroring.
+- **Mentored a junior developer** on Python best practices throughout the project, receiving praise from my team lead for elevating the team's Python knowledge.
 
-## Enterprise Security Groups Migration
+## Enterprise Security Group Migration
 
-- **Context & Problem:**
-  - Enterprise initiative to transition from legacy security groups to more granular, application-specific security groups for improved security posture
-  - Required coordination across multiple teams to identify common ingress/egress rules
-  - Needed to understand service-specific security requirements for each team service
-- **Leadership & Initiative:**
-  - Within one month of starting, led this enterprise initiative for my team
-  - Created and coordinated a dedicated Slack channel for cross-team knowledge sharing and collaboration
-  - Researched and documented security requirements for each service within my team
-  - Identified opportunities to share common security group rules across teams to reduce duplication and save time
-- **Execution & Impact:**
-  - Delivered project within two weeks of assignment, ahead of schedule
-  - Mentored junior developer on AWS security concepts including Security Groups and Prefix Lists
-  - Contributed to enterprise-wide security improvement initiative
-  - Established reusable patterns that other teams could leverage
+- **Led a time-sensitive, enterprise-wide security initiative** for my team within my first month to migrate to more granular, application-specific security groups.
+- **Delivered the project in just two weeks—ahead of schedule**—by establishing a cross-team communication channel and creating a common security group with shared rules, saving other teams in my org significant time and effort.
+- **Mentored a junior developer** on core AWS security concepts (Security Groups, Prefix Lists) during the migration.
 
 ## GitHub Enterprise Migration
 
-- **Context & Problem:**
-  - Company initiative to migrate from legacy internal GitHub system to GitHub Enterprise (github.com)
-  - Director prioritized early migration to get ahead of enterprise timeline
-- **Leadership & Initiative:**
-  - Volunteered to lead the migration effort for my team
-  - Proactively engaged with other teams to understand potential pitfalls and manual work requirements
-  - Migrated multiple repositories to new GitHub Enterprise system
-  - Monitored for issues post-migration and coordinated with stakeholders
-- **Execution & Impact:**
-  - Successfully completed early migration ahead of planned timeline
-  - Positioned team to lead by example for other teams in the organization
-  - Identified and documented migration patterns to help future migrations
+- **Volunteered to lead my team's early migration** from a legacy source control system to GitHub Enterprise, a high-priority initiative from our director.
+- **Successfully migrated several key repositories ahead of the enterprise timeline**, identifying and documenting migration patterns that streamlined the process for other teams.
 
 ## AI Support Agent Platform
 
-- **Context & Problem:**
-  - Project started by previous engineers to create an AI-powered support agent for internal tooling
-  - Needed senior engineering ownership to clean up codebase, establish best practices, and expand vision
-  - High visibility project with Senior Vice President interest
-- **Leadership & Initiative:**
-  - Within weeks of starting, onboarded to project (outside assigned work) and quickly took senior engineering ownership
-  - Learned Capital One's AI/ML system, tooling ecosystem, and available platform capabilities
-  - Elevated project vision from single-team tool to company-wide platform that any team could adopt by providing their documentation
-  - Guided team on Python best practices and code quality improvements
-  - Project was demoed during organizational all-hands, showcasing its potential impact
-- **Execution & Impact:**
-  - Transformed project into a scalable platform approach rather than single-use tool
-  - Positioned solution as reusable asset for the entire company
-  - Gained Senior Vice President sponsorship and visibility
-  - Enabled other teams to create their own support agents for internal products
+- **Took ownership of a high-visibility AI support agent project** (with SVP interest) that was outside of my direct responsibilities.
+- **Drove the implementation of the project's vision** to create a scalable, company-wide platform that other teams could adopt to support their own internal products, turning the initial concept into a functional reality.
+- **Guided the team on Python best practices to improve code quality**, leading to a successful demo at an organizational all-hands meeting.
 
 # **Collaboration & Mentorship**
 
@@ -171,18 +125,22 @@
 
 <!-- company: CapitalOne -->
 
-### Cross-Team Coordination and Knowledge Sharing
+### Technical Leadership & Mentorship
 
-- Created and facilitated dedicated Slack channel for cross-team collaboration on security groups migration, enabling teams to share learnings and identify common patterns
-- Collaborated with team lead (Distinguished Engineer level) and external customers on LLDS parity checker design, incorporating feedback from multiple stakeholders
-- Proactively engaged with other teams during GitHub migration to understand challenges and document best practices for future migrations
+- **Mentored junior developers** on both Python best practices (LLDS project) and core AWS security concepts (Security Group migration), accelerating their growth.
+- **Elevated team's technical skills**, receiving praise from my team lead for my Python expertise and guiding the AI Support Agent team on code quality.
+- **Demonstrated technical depth** in event-driven architectures and AWS security, becoming a go-to person for complex technical questions.
+- **Working to become an instructor** for the internal "Tech College," creating content to teach AWS and Lambda best practices to new hires, an initiative taken outside of assigned work to give back to the engineering community.
 
-### Python Expertise and Technical Leadership
+### Design & Documentation
 
-- Recognized by team lead for Python expertise—explicitly told that I had taught them new Python concepts
-- Praised by both manager and team lead for quick onboarding and early contributions
-- Guided team on Python best practices and code quality improvements for AI Support Agent platform
-- Demonstrated technical depth in lambda-based event-driven architectures and AWS security concepts
+- **Authored the core design for the LLDS parity checker**, praised by a Distinguished Engineer for its cost-effective and scalable architecture. This design is now a reusable pattern for future customer onboardings.
+- **Improved developer onboarding and knowledge sharing** by significantly enhancing the READMEs for two of the team's key repositories, integrating KT session notes and tribal knowledge to make them accessible and permanent.
+- **Documented migration patterns** for both the Security Group and GitHub Enterprise initiatives, creating durable resources that other teams can leverage.
+
+### General Recognition
+
+- **Praised by both my manager and team lead** for exceptionally fast onboarding and making impactful contributions within weeks of joining.
 
 ## **Mentorship**
 
