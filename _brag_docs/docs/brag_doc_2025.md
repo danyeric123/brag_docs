@@ -81,7 +81,9 @@
 - **Spearheaded the design of a mission-critical parity checker** for Capital One's Low Latency Data Store (LLDS), a system required to handle **2,000 requests per second**. This was the first of its kind and essential for onboarding a new, major customer.
 - **Took immediate ownership within weeks of joining**, rapidly learning the internal event streaming platform to architect a novel, cost-effective, and scalable solution.
 - **My proposed lambda-based, event-driven design was praised by a Distinguished Engineer and the team lead** because it significantly reduced customer implementation effort by eliminating the need for traffic mirroring.
-- **Mentored a junior developer** on Python best practices throughout the project, receiving praise from my team lead for elevating the team's Python knowledge.
+- **Built a self-service Databricks analytics system** that enables teams across the organization to analyze parity checker differences independently. Created a GitHub repo-connected Databricks notebook with a reusable analysis package, allowing users to simply clone the repo and customize their analysis workflows.
+- **Established new organizational patterns** for Databricks integration with GitHub repositories, creating a template that other teams can follow for self-service analytics solutions.
+- **Became the team's Python expert and go-to person**, mentoring junior developers on best practices and elevating the overall Python knowledge across the team.
 
 ## Enterprise Security Group Migration
 
@@ -98,7 +100,14 @@
 
 - **Took ownership of a high-visibility AI support agent project** (with SVP interest) that was outside of my direct responsibilities.
 - **Drove the implementation of the project's vision** to create a scalable, company-wide platform that other teams could adopt to support their own internal products, turning the initial concept into a functional reality.
+- **Integrated New Relic monitoring and observability** into the platform, collaborating directly with the AIML team to ensure proper instrumentation and performance tracking across the AI support agent infrastructure.
 - **Guided the team on Python best practices to improve code quality**, leading to a successful demo at an organizational all-hands meeting.
+
+## Service Improvements & Bug Discovery
+
+- **Discovered and resolved multiple critical bugs** in the main `consumers` service despite being new to the team, uncovering parts of the codebase that other team members were unfamiliar with.
+- **Made significant improvements to service reliability and performance**, demonstrating deep technical investigation skills and contributing to overall system stability.
+- **Became a key contributor to core service maintenance**, quickly establishing expertise in critical business systems.
 
 # **Collaboration & Mentorship**
 
@@ -127,9 +136,10 @@
 
 ### Technical Leadership & Mentorship
 
-- **Mentored junior developers** on both Python best practices (LLDS project) and core AWS security concepts (Security Group migration), accelerating their growth.
-- **Elevated team's technical skills**, receiving praise from my team lead for my Python expertise and guiding the AI Support Agent team on code quality.
-- **Demonstrated technical depth** in event-driven architectures and AWS security, becoming a go-to person for complex technical questions.
+- **Became the team's go-to Python expert**, mentoring junior developers on best practices and elevating the overall Python knowledge across multiple projects including LLDS parity checker and AI Support Agent platform.
+- **Established myself as the AI-assisted coding evangelist** on the team, teaching others best practices for integrating AI tools into their development workflow and helping team members improve their productivity through AI-powered development techniques.
+- **Taught Databricks fundamentals** to team members, sharing knowledge gained from building the self-service analytics system and establishing patterns for future Databricks integrations.
+- **Elevated team's technical skills** across multiple domains, receiving praise from my team lead for Python expertise, AWS security knowledge (Security Groups, Prefix Lists), and innovative approaches to development tooling.
 - **Working to become an instructor** for the internal "Tech College," creating content to teach AWS and Lambda best practices to new hires, an initiative taken outside of assigned work to give back to the engineering community.
 
 ### Design & Documentation
@@ -146,9 +156,11 @@
 
 ### Direct Mentorship of Junior Developers
 
-- Mentored junior developer on Python best practices during LLDS parity checker project execution
+- **Became the team's primary Python mentor**, providing ongoing guidance on best practices, code quality, and advanced Python concepts across multiple projects
+- Mentored junior developer on Python best practices during LLDS parity checker project execution, receiving praise from team lead for elevating team knowledge
 - Mentored junior developer on AWS security concepts including Security Groups and Prefix Lists during enterprise security migration
 - Guided team members on code quality and Python best practices for AI Support Agent platform
+- **Evangelized AI-assisted coding practices**, teaching team members how to effectively integrate AI tools into their development workflow to improve productivity and code quality
 
 ### Knowledge Transfer and Teaching
 
@@ -247,9 +259,11 @@ Concepts:
 
 ### Libraries and Tools
 
+- **Databricks**: Learned from scratch how to build self-service analytics systems, integrate GitHub repositories with Databricks notebooks, and create reusable analysis packages for organizational use
 - Capital One's internal event streaming platform and its integration patterns
 - AWS Lambda best practices and Capital One-specific implementation patterns
 - Capital One's AI/ML tooling ecosystem and platform services
+- **New Relic**: Integrated monitoring and observability solutions for AI platform infrastructure
 - GitHub Enterprise (github.com) migration tools and workflows
 - AWS security constructs (Security Groups, Prefix Lists) at enterprise scale
 
