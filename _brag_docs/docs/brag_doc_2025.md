@@ -84,6 +84,8 @@
 - **Built a self-service Databricks analytics system** that enables teams across the organization to analyze parity checker differences independently. Created a GitHub repo-connected Databricks notebook with a reusable analysis package, allowing users to simply clone the repo and customize their analysis workflows.
 - **Established new organizational patterns** for Databricks integration with GitHub repositories, creating a template that other teams can follow for self-service analytics solutions.
 - **Became the team's Python expert and go-to person**, mentoring junior developers on best practices and elevating the overall Python knowledge across the team.
+- **The system is now in production, processing 16M records per day.** It was deployed with little to no changes after the handoff, demonstrating that the implementation was production-ready upon completion.
+- **Continued to be a resource after leaving the LLDS team.** Fielded occasional questions from the lead engineer who took over, though the documentation and tools built during the project proved clear enough that minimal guidance was needed.
 
 ## Enterprise Security Group Migration
 
@@ -108,6 +110,12 @@
 - **Discovered and resolved multiple critical bugs** in the main `consumers` service despite being new to the team, uncovering parts of the codebase that other team members were unfamiliar with.
 - **Made significant improvements to service reliability and performance**, demonstrating deep technical investigation skills and contributing to overall system stability.
 - **Became a key contributor to core service maintenance**, quickly establishing expertise in critical business systems.
+
+## Userspaces Portal
+
+- **Joined the Userspaces team as a full stack engineer — one of only two engineers working on the frontend** — and immediately began tackling a significant bug backlog, cutting it in half within the first two weeks. Userspaces is an internal governance and compliance platform for S3 buckets used in model training and data analysis, allowing users to view their storage spaces and manage object certification and registration status.
+- **Began migrating the frontend to Zustand and React Query**, replacing a brittle state management pattern that depended on React Router's internal state. This pattern caused users to lose all of their selections and progress whenever they reloaded the page or navigated to a different route — a poor experience baked deep into the architecture. Zustand's centralized store eliminated this entire class of bug, keeping state consistent across routes and reloads.
+- **Resolved a persistent stale data bug on item deletion.** When users deleted an item, it would remain visible on the frontend until a manual page refresh — a confusing experience that undermined trust in the UI. By leveraging React Query's cache invalidation, the frontend now automatically reflects the current server state after any mutation, no refresh required.
 
 # **Collaboration & Mentorship**
 
@@ -266,6 +274,8 @@ Concepts:
 - **New Relic**: Integrated monitoring and observability solutions for AI platform infrastructure
 - GitHub Enterprise (github.com) migration tools and workflows
 - AWS security constructs (Security Groups, Prefix Lists) at enterprise scale
+- **Zustand**: Learned centralized state management for React applications, replacing router-dependent state with a persistent store that survives page reloads and route changes
+- **React Query (TanStack Query)**: Applied server state management patterns including cache invalidation and automatic refetching to resolve stale data bugs and simplify frontend data flows
 
 # **Outside of work**
 
